@@ -1,25 +1,6 @@
-## IT blog
+## 시작 글
 
-IT 관련 다양한 주제로 글을 좀 써 볼까 한다. 
+IT 관련 다양한 주제로 글을 좀 써 볼까 한다.
 
-### Markdown
+주로 인터넷 글들을 퍼와서 편집, 정리하는 방식이겠지만 기록이 나와 모두에게 도움이 되길 바라는 작은 마음이다. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
