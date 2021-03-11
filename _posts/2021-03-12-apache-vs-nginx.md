@@ -11,6 +11,6 @@ categories: web server
 이번에는 Apache 와 Nginx 에 대해서 좀 알아보겠다. 
 
 ## 점유율
-![source_hostadvice](../img/apache_vs_nginx.jpg)
+![source_hostadvice](https://tgombseojh.github.io/img/apache_vs_nginx.jpg)
 
 서비스의 특성에 따라 다를테니 점유율은 참고만 하도록 하자. 
