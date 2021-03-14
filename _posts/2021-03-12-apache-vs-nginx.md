@@ -25,7 +25,7 @@ categories: web server
 |동적컨텐츠|서버 자체 처리|외부 처리(프록시)|  
 |아키텍처| ![architecture_apache](https://tgombseojh.github.io/img/architecture_apache.jpg) | ![architecture_nginx](https://tgombseojh.github.io/img/architecture_nginx.jpg) |
 |구성방식|분산, 중앙 집중 선택|중앙 집중형.. 클라우드, 가상화, MSA 에서는 경량화와 성능보장이라는 측면에서 장점이 될 수 있다| 
-|모듈 확장성/보안|60+다양한 모듈, 선택적 활성, 다양한 디자인과 확장 가능. DDos 방어 제공.|다른 코어 모듈을 동적으로 로딩 불가. 옵션 최소화. 보안 관련 기술 문서 제공.| 
+|모듈 확장성 / 보안|60+다양한 모듈, 선택적 활성, 다양한 디자인과 확장 가능. DDos 방어 제공.|다른 코어 모듈을 동적으로 로딩 불가. 옵션 최소화. 보안 관련 기술 문서 제공.| 
 <br>
 
 
