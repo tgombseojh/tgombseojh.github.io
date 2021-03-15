@@ -28,7 +28,41 @@ categories: web server
 |모듈 확장성 / 보안|60+다양한 모듈, 선택적 활성, 다양한 디자인과 확장 가능. DDos 방어 제공.|다른 코어 모듈을 동적으로 로딩 불가. 옵션 최소화. 보안 관련 기술 문서 제공.| 
 <br>
 
+## Nginx 설치 및 설정
+```ubuntu
+sudo apt-get install nginx
 
+sudo vi /etc/nginx/nginx.conf
 
+http {} 블록 끝에 구문 추가
+include /etc/nginx/sites-enabled/*.conf; // sites-enabled 디렉토리에서 서버 블록을 찾도록 지시
+server_names_hash_bucket_size 64; // 도메인이름 분석하는데 할당되는 메모리 양
 
+/etc/nginx/sites-available/도메인이름(프로토콜 제외).conf 아래 내용 입력
+server {
+  listen  80;
+  server_name 도메인이름;
 
+  location / {
+    root  /var/www/html; //vsftpd 홈디렉토리
+    index  index.html index.htm index.nginx-debian.html;
+    try_files $uri $uri/ =404; a
+  }
+
+  error_page  500 502 503 504  /50x.html;
+  location = /50x.html {
+    root  /usr/share/nginx/html;
+  }
+}
+
+sudo ln -s /etc/nginx/sites-available/도메인.conf /etc/nginx/sites-enabled/도메인.conf
+
+sudo systemctl restart nginx
+
+sudo ls /var/log/nginx // access.log error.log
+sudo tail -f /var/log/nginx/access.log
+```
+
+참고사이트: [Nginx](https://nginx.org/en/docs/)
+참고사이트: [Nginx](https://coding-start.tistory.com/381)
+참고사이트: [Nginx](https://juneyr.dev/nginx-basics)
