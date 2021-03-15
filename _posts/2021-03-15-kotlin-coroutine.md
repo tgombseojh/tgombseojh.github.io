@@ -41,7 +41,7 @@ println("Stop")
 Thread.sleep(2000) 과 같은 코드는 쓰레드를 반환하지 않고 놀게 만들기 때문에 좋지 않은가보다. 
 
 ## Coroutine vs Thread
-잘 정리된 글이 있어 소개한다. Link: [Coroutine vs Thread][https://aaronryu.github.io/2019/05/27/coroutine-and-thread/]
+잘 정리된 글이 있어 소개한다. Link: [Coroutine vs Thread](https://aaronryu.github.io/2019/05/27/coroutine-and-thread/)
 
 
 
