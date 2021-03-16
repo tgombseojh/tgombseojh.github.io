@@ -63,6 +63,8 @@ sudo ls /var/log/nginx // access.log error.log
 sudo tail -f /var/log/nginx/access.log
 ```
 
-참고사이트: [Nginx](https://nginx.org/en/docs/)
+참고사이트: [Nginx.org](https://nginx.org/en/docs/)
+
 참고사이트: [Nginx](https://coding-start.tistory.com/381)
+
 참고사이트: [Nginx](https://juneyr.dev/nginx-basics)
